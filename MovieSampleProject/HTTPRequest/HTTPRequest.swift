@@ -1,7 +1,7 @@
 import Alamofire
 class HTTP  {
-    func get(url:String, param :Parameters?, result: @escaping (Data) -> Void    ) -> Void {
-        AF.request(url, method: .get, parameters: param).response { response in
+    func get(url:String, result: @escaping (Data) -> Void    ) -> Void {
+        AF.request(url, method: .get).response { response in
         print(response)
         result(response.data!)
             
