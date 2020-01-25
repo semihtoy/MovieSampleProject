@@ -15,6 +15,5 @@ class ImagePostCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var ImagePostMessage: UILabel!
     @IBOutlet weak var ImagePostImage: UIImageView!
     @IBOutlet weak var ImagePostLikeCount: UILabel!
-    @IBOutlet weak var ImagePostCommentCount: UILabel!
-    
+    @IBOutlet weak var ImagePostCommentCount: UILabel!    
 }

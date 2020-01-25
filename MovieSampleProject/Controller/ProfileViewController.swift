@@ -46,12 +46,13 @@ class ProfileViewController: UIViewController,UICollectionViewDataSource, UIColl
         if collectionView == StoryColl  {
             guard let cellStory = collectionView.dequeueReusableCell(withReuseIdentifier: "StoryCell", for: indexPath) as?
                 StoryCollectionViewCell else { return UICollectionViewCell() }
-            cellStory.StoryName.text = _profile[indexPath.row].userFullName
+            cellStory.StoryName.text = _profile[indexPath.row].userFullName!.split{$0 == " "}.map(String.init)[0]
+            cellStory.StoryImage.layer.borderWidth = 2
+            cellStory.StoryImage.layer.borderColor = UIColor(red:80/255, green:155/255, blue:243/255, alpha: 1).cgColor
             let imageURL = URL(string: _profile[indexPath.row].userImageUrl!)
             cellStory.StoryImage.kf.setImage(with: imageURL)
             return cellStory
-        }
-        else if collectionView == PostColl {
+        } else if collectionView == PostColl {
             guard let cellPost = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCell", for: indexPath) as?
                 PostCollectionViewCell else { return UICollectionViewCell() }
             cellPost.PostName.text = _profile[indexPath.row].userFullName
@@ -79,7 +80,7 @@ class ProfileViewController: UIViewController,UICollectionViewDataSource, UIColl
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        _getProfile.getProfileData { (Profile) in
+            _getProfile.getProfileData { (Profile) in
             self._profile = Profile
             self.StoryColl.reloadData()
             self.PostColl.reloadData()

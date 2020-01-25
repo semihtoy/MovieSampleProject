@@ -9,7 +9,6 @@
 import UIKit
 
 class ForYouCollectionViewCell: UICollectionViewCell {
-    
     @IBOutlet weak var ForYouTitle: UILabel!
     @IBOutlet weak var ForYouYear: UILabel!
     @IBOutlet weak var ForYouGenre: UILabel!

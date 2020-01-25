@@ -14,6 +14,5 @@ class PostCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var PostCreate: UILabel!
     @IBOutlet weak var PostMessage: UILabel!
     @IBOutlet weak var PostLikeCount: UILabel!
-    @IBOutlet weak var PostCommentCount: UILabel!
-    
+    @IBOutlet weak var PostCommentCount: UILabel!    
 }

@@ -10,7 +10,6 @@ class GetProfile {
             {
                 let responseModel = try jsonDecoder.decode([Profile].self, from: data)
                 result(responseModel)
-                
             } catch _ {
             }
         }

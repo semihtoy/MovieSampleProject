@@ -12,7 +12,6 @@ class GetMovie {
             } catch {
             }
             }
-
         }
     }
 
