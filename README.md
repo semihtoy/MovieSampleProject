@@ -14,10 +14,10 @@ The layer that interacts directly with the user.
 # Screenshots
 
 #### Movie Screen
-![](_screenshots/movieScreen.jpg)
+![](_screeenshots/movieScreen.jpg)
 
 #### Profile Screen
-![](_screenshots/profileScreen.jpg)
+![](_screeenshots/profileScreen.jpg)
 
 
 
