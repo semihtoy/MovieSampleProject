@@ -55,6 +55,10 @@ class MovieViewController: UIViewController,UICollectionViewDataSource, UICollec
         ForYouColl.delegate = self
         PopularColl.dataSource = self
         PopularColl.delegate = self
+        let lineView = UIView(frame: CGRect(x: 30, y: 70, width: 360, height: 0.3))
+        lineView.layer.borderWidth = 1.0
+        lineView.layer.borderColor = UIColor.lightGray.cgColor
+        self.view.addSubview(lineView)
     }
 }
 
