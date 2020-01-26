@@ -13,11 +13,11 @@ The layer that interacts directly with the user.
 
 # Screenshots
 
-#### Sample Dashboard Page
-![](_screenshots/module-zero-core-template-ui-home.png)
+#### Movie Screen
+![](_screenshots/movieScreen.jpg)
 
-#### User Creation Modal
-![](_screenshots/module-zero-core-template-ui-user-create-modal.png)
+#### Profile Screen
+![](_screenshots/profileScreen.jpg)
 
 
 
